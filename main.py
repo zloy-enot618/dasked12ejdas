@@ -71,19 +71,3 @@ def create_movie(movie_name: CreateMovie):
     return new_movie
 
 
-"""@app.post("/drones", response_model=Drone, status_code=201)
-def create_drone(drone: DroneCreate):
-    for saved_drone in drones:
-        if saved_drone["name"].lower() == drone.name.lower():
-            raise HTTPException(
-                status_code=400,
-                detail="Dron name is takes!"
-            )
-    new_drone = {
-        "id": len(drones) + 1,
-        "name": drone.name,
-        "battery": drone.battery
-    }
-    drones.append(new_drone)
-    return new_drone
-"""
